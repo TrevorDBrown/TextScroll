@@ -72,11 +72,23 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CharacterShiftScrollForm.Designer.vb">
+      <DependentUpon>CharacterShiftScrollForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CharacterShiftScrollForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="LeftToRightScrollForm.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="LeftToRightScrollForm.Designer.vb">
       <DependentUpon>LeftToRightScrollForm.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.vb">
+      <DependentUpon>MainForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
@@ -96,8 +108,14 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="CharacterShiftScrollForm.resx">
+      <DependentUpon>CharacterShiftScrollForm.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="LeftToRightScrollForm.resx">
       <DependentUpon>LeftToRightScrollForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
