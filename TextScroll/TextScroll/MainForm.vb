@@ -12,8 +12,8 @@ Public Class MainForm
     End Sub
 
     ' LeftToRightScrollButton_Click - the event handler for when the Left to Right Scroll Example button is clicked.
-    Private Sub LeftToRightScrollButton_Click(sender As Object, e As EventArgs) Handles LeftToRightScrollButton.Click
-        LeftToRightScrollForm.Show()    ' Show the Left To Right Scroll Example Form.
+    Private Sub LeftToRightScrollButton_Click(sender As Object, e As EventArgs) Handles PausingHorizontalScrollButton.Click
+        PausingHorizontalScrollForm.Show()    ' Show the Left To Right Scroll Example Form.
     End Sub
 
     ' CharacterShiftScrollButton_Click - the event handler for when the Character Shift Scroll button is clicked.
@@ -21,8 +21,15 @@ Public Class MainForm
         CharacterShiftScrollForm.Show() ' Show the Character Shift Scroll Example Form.
     End Sub
 
+    ' VerticalScrollButton_Click - the event handler for when the Vertical Scroll button is clicked.
+    Private Sub VerticalScrollButton_Click(sender As Object, e As EventArgs) Handles VerticalScrollButton.Click
+        VerticalScrollForm.Show()   ' Show the Vertical Scroll Example Form.
+    End Sub
+
     ' ExitButton_Click - the event handler for when the Exit button is clicked.
     Private Sub ExitButton_Click(sender As Object, e As EventArgs) Handles ExitButton.Click
         Application.Exit() ' Terminate the application.
     End Sub
+
+
 End Class

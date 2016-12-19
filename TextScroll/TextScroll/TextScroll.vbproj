@@ -78,11 +78,11 @@
     <Compile Include="CharacterShiftScrollForm.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="LeftToRightScrollForm.vb">
+    <Compile Include="PausingHorizontalScrollForm.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="LeftToRightScrollForm.Designer.vb">
-      <DependentUpon>LeftToRightScrollForm.vb</DependentUpon>
+    <Compile Include="PausingHorizontalScrollForm.Designer.vb">
+      <DependentUpon>PausingHorizontalScrollForm.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="MainForm.Designer.vb">
@@ -106,13 +106,19 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="VerticalScrollForm.Designer.vb">
+      <DependentUpon>VerticalScrollForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="VerticalScrollForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="CharacterShiftScrollForm.resx">
       <DependentUpon>CharacterShiftScrollForm.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="LeftToRightScrollForm.resx">
-      <DependentUpon>LeftToRightScrollForm.vb</DependentUpon>
+    <EmbeddedResource Include="PausingHorizontalScrollForm.resx">
+      <DependentUpon>PausingHorizontalScrollForm.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.vb</DependentUpon>
@@ -122,6 +128,9 @@
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VerticalScrollForm.resx">
+      <DependentUpon>VerticalScrollForm.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
