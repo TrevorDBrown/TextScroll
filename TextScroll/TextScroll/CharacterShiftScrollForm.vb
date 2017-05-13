@@ -16,7 +16,7 @@ Public Class CharacterShiftScrollForm
 
     ' CharacterShiftScrollForm_Load - The event handler for when the form initially loads.
     Private Sub CharacterShiftScrollForm_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        TextLabel.Text = "This text scrolls in place, by removing the first element of the string, and adding it to the end.          "   ' Sets some text within the label.
+        TextLabel.Text = MainForm.GetText()   ' Sets some text within the label.
         CurrentString = TextLabel.Text  ' Sets the current string variable to equal the text in the label.
         TextLabel.Location = New System.Drawing.Point(0, 0)    ' Positions the text label in the top-left corner of the form.
         UpdateTimer.Interval = TickRate  ' Sets the tick rate of the timer.

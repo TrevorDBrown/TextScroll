@@ -26,11 +26,12 @@ Partial Class MainForm
         Me.CharacterShiftScrollButton = New System.Windows.Forms.Button()
         Me.ExitButton = New System.Windows.Forms.Button()
         Me.VerticalScrollButton = New System.Windows.Forms.Button()
+        Me.txtUserText = New System.Windows.Forms.TextBox()
         Me.SuspendLayout()
         '
         'PausingHorizontalScrollButton
         '
-        Me.PausingHorizontalScrollButton.Location = New System.Drawing.Point(79, 26)
+        Me.PausingHorizontalScrollButton.Location = New System.Drawing.Point(79, 107)
         Me.PausingHorizontalScrollButton.Name = "PausingHorizontalScrollButton"
         Me.PausingHorizontalScrollButton.Size = New System.Drawing.Size(176, 23)
         Me.PausingHorizontalScrollButton.TabIndex = 0
@@ -39,7 +40,7 @@ Partial Class MainForm
         '
         'CharacterShiftScrollButton
         '
-        Me.CharacterShiftScrollButton.Location = New System.Drawing.Point(79, 55)
+        Me.CharacterShiftScrollButton.Location = New System.Drawing.Point(79, 136)
         Me.CharacterShiftScrollButton.Name = "CharacterShiftScrollButton"
         Me.CharacterShiftScrollButton.Size = New System.Drawing.Size(176, 23)
         Me.CharacterShiftScrollButton.TabIndex = 1
@@ -48,7 +49,7 @@ Partial Class MainForm
         '
         'ExitButton
         '
-        Me.ExitButton.Location = New System.Drawing.Point(79, 113)
+        Me.ExitButton.Location = New System.Drawing.Point(79, 194)
         Me.ExitButton.Name = "ExitButton"
         Me.ExitButton.Size = New System.Drawing.Size(176, 23)
         Me.ExitButton.TabIndex = 2
@@ -57,18 +58,28 @@ Partial Class MainForm
         '
         'VerticalScrollButton
         '
-        Me.VerticalScrollButton.Location = New System.Drawing.Point(79, 84)
+        Me.VerticalScrollButton.Location = New System.Drawing.Point(79, 165)
         Me.VerticalScrollButton.Name = "VerticalScrollButton"
         Me.VerticalScrollButton.Size = New System.Drawing.Size(176, 23)
         Me.VerticalScrollButton.TabIndex = 3
         Me.VerticalScrollButton.Text = "&Vertical Scroll Effect"
         Me.VerticalScrollButton.UseVisualStyleBackColor = True
         '
+        'txtUserText
+        '
+        Me.txtUserText.Location = New System.Drawing.Point(13, 13)
+        Me.txtUserText.Multiline = True
+        Me.txtUserText.Name = "txtUserText"
+        Me.txtUserText.Size = New System.Drawing.Size(309, 88)
+        Me.txtUserText.TabIndex = 4
+        Me.txtUserText.Text = "This is sample text."
+        '
         'MainForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(334, 162)
+        Me.ClientSize = New System.Drawing.Size(334, 229)
+        Me.Controls.Add(Me.txtUserText)
         Me.Controls.Add(Me.VerticalScrollButton)
         Me.Controls.Add(Me.ExitButton)
         Me.Controls.Add(Me.CharacterShiftScrollButton)
@@ -76,6 +87,7 @@ Partial Class MainForm
         Me.Name = "MainForm"
         Me.Text = "Select the effect you would like to see"
         Me.ResumeLayout(False)
+        Me.PerformLayout()
 
     End Sub
 
@@ -83,4 +95,5 @@ Partial Class MainForm
     Friend WithEvents CharacterShiftScrollButton As Button
     Friend WithEvents ExitButton As Button
     Friend WithEvents VerticalScrollButton As Button
+    Friend WithEvents txtUserText As TextBox
 End Class

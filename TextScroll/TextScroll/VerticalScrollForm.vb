@@ -15,9 +15,7 @@ Public Class VerticalScrollForm
     Private Sub VerticalScrollForm_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         ' Loads the specified string into the text field of the label.
         ' Note: ControlChars.NewLine allows you to break a line of text in a large "explicit" body of text.
-        TextLabel.Text = "This is a big, big, big, big, big, big, big, big, big, big, big, BIG block of text. " _
-            & ControlChars.NewLine & "It's not really, but, I'm just trying to prove a point. When you see this, " _
-            & ControlChars.NewLine & "it should head towards the top of the form, and then loop back to the bottom again."
+        TextLabel.Text = MainForm.GetText()
         TextLabel.Location = New System.Drawing.Point(0, 0)    ' Positions the text label in the top-left corner of the form.
         UpdateTimer.Interval = TickRate     ' Sets the tick rate of the update timer.
         UpdateTimer.Start()     ' Starts the update timer.

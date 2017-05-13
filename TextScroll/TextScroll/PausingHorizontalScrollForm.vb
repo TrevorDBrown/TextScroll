@@ -16,7 +16,7 @@ Public Class PausingHorizontalScrollForm
 
     ' PausingHorizontalScrollForm_Load - The event handler for when the form initially loads.
     Private Sub PausingHorizontalScrollForm_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        TextLabel.Text = "This text scrolls from left to right, and pauses for 100 timer ticks when the left edge reaches the left side of the form."   ' Sets some text within the label.
+        TextLabel.Text = MainForm.GetText()   ' Sets some text within the label.
         TextLabel.Location = New System.Drawing.Point(0, 0)    ' Positions the text label in the top-left corner of the form.
         CurrentPauseCount = 0   ' Sets the Current Pause Counter to 0.
         IsPaused = True         ' Sets the IsPaused Boolean Flag to True.
